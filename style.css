@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  background-image: url("./img/falling-star-amp-clouds.jpeg");
+  background-size: cover;
+}
+
+.price_level {
+  margin: 30px 0 10px 0;
+  width: 300px;
+  height: 35px;
+  font-size: 19px;
+  border-radius: 10px;
+  border: solid 2px #ad8af1;
+  background-color: #ffd06c;
+  cursor: pointer;
+  color: crimson;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: deeppink;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid 3px lightseagreen;
+}
+
+th {
+  background-color: #52cfc4;
+  color: #edf5fd;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+
+td {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.form-control {
+  width: 180px;
+  height: 20px;
+  font-size: 17px;
+  font-style: italic;
+  border: solid 2px #d3d3d3;
+  border-radius: 5px;
+  cursor: pointer;
+}

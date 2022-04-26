@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <select
+      name=""
+      id="price_level"
+      class="price_level"
+      onchange="pricechange()"
+    >
+      <option value="0" style="color: gray">Choose a price</option>
+      <option value="1000">From $1000 or less</option>
+      <option value="2000">From $2000 or less</option>
+      <option value="3000">From $3000 or less</option>
+      <option value="4000">From $4000 or less</option>
+      <option value="6000">From $6000 or less</option>
+    </select>
+    <h2>Product cart</h2>
+    <table border="1" class="product_table" align="center">
+      <tr>
+        <th><input type="checkbox" disabled /></th>
+        <th>Merchandise</th>
+        <th>Unit price</th>
+        <th>Quantity</th>
+        <th>Into money</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" onclick="tick1box(0)" name="choose" />
+        </td>
+        <td>iPhone 13 Pro Max 128GB</td>
+        <td name="price">$2500</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" onclick="tick1box(1)" name="choose" /></td>
+        <td>Samsung Galaxy S21 Ultra 5G</td>
+        <td name="price">$1800</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" onclick="tick1box(2)" name="choose" /></td>
+        <td>Nokia C30 32GB</td>
+        <td name="price">$800</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" onclick="tick1box(3)" name="choose" /></td>
+        <td>OPPO Reno6 Z 5G</td>
+        <td name="price">$1200</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" onclick="tick1box(4)" name="choose" /></td>
+        <td>Sony Xperia 5 II (Mark 2)</td>
+        <td name="price">$2800</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" onclick="tick1box(5)" name="choose" /></td>
+        <td>Bphone A60</td>
+        <td name="price">$4500</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            value="0"
+            disabled
+            name="quantity"
+            onclick="intomoney(this)"
+            class="form-control"
+          />
+        </td>
+        <td name="intomoney"></td>
+      </tr>
+      <tr>
+        <th colspan="4">Total money</th>
+        <td><span id="total"></span></td>
+      </tr>
+    </table>
+  </body>
+</html>
+<script src="./index.js"></script>
